@@ -1,383 +1,174 @@
-body {
-    font-family: "Segoe UI", sans-serif;
-    background: WhiteSmoke;
-    margin: 0;
-    padding: 0;
-    color: #223556;
-}
-
-
-.container {
-  max-width: 1300px;
-  margin: auto;
-  padding: 24px;
-}
-
-
-.navbar {
-  position: sticky;
-  top: 0;
-  background: White;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  z-index: 1000;
-  width: 100%;
-}
-
-.navbar-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  gap: 15px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: MidnightBlue;
-  font-weight: 700;
-  font-size: 1.3rem;
-  white-space: nowrap;
-}
-
-.navbar-logo {
-  height: 60px;
-  margin-right: 2px;
-}
-
-.gstin-bar {
-  background: AliceBlue;
-  color: SlateGray;
-  padding: 4px 20px;
-  border-radius: 12px;
-  margin-left: 16px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: flex-end;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  white-space:nowrap;
-}
-
-.menu li {
-  position: relative;
-  list-style: none; 
-}
-
-.menu a {
-  text-decoration: none;
-  color: #223556;
-  font-weight: 500;
-  padding: 8px 18px;
-  border-radius: 6px;
-  transition: background 0.20s;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-
-.has-dropdown:hover > .dropdown,
-.has-dropdown:focus-within > .dropdown {
-  display: block;
-}
-
-.dropdown {
-  display: none;
-  position: absolute;
-  background: White;
-  box-shadow: 0 6px 16px rgba(30,64,128,0.08);
-  border-radius: 0 0 12px 12px;
-  top: 42px;
-  left: 0;
-  min-width: 220px;
-  z-index: 10;
-  padding: 8px 0;
-  list-style: none; 
-}
-
-.dropdown li {
-  width: 100%;
-  list-style: none; 
-  margin: 0;
-  padding: 0;
-}
-
-.dropdown a {
-  color: #223556;
-  padding: 10px 22px;
-  font-size: 1rem;
-  border-radius: 0;
-  transition: background 0.17s;
-  display: block;
-  white-space: wrap;
-}
-
-.dropdown a:hover {
-  background: AliceBlue;
-  color: DodgerBlue;
-}
-
-
-
-.mobile-nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  margin-left: 24px;
-  color: DodgerBlue;
-}
-
-
-
-
 .contact-top {
-    text-align: center;
-    padding: 40px 0 10px;
+  text-align: center;
+  padding: 40px 0 10px;
 }
+
 .contact-top h1 {
-    color: DodgerBlue;
-    font-size: 2rem;
+  color: var(--primary);
+
+  font-size: 2rem;
 }
+
 .contact-top p {
-    color: DimGray;
+  color: var(--text-light);
 }
 
 .contact-details {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;  
-    flex-wrap: wrap;
-    gap: 25px;
-    margin: 20px auto;
-    max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 20px auto;
+  max-width: 1100px;
 }
-
 
 .detail-box {
-    width: 300px;
-    height: 180px;            
-    background: #fff;
-    padding: 22px;
-    border-radius: 14px;
-    text-align: center;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-
+  width: 300px;
+  height: 180px;
+  background: var(--bg-card);
+  padding: 22px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--bg-body);
 }
-
 
 .detail-box i {
-    font-size: 2.2rem;
-    color: DodgerBlue;
-    margin-bottom: 8px;
+  font-size: 2.2rem;
+  color: var(--secondary);
+
+  margin-bottom: 8px;
 }
 
-
+.detail-box h3 {
+  margin-top: 10px;
+  color: var(--dark);
+}
 
 .map-section h2 {
-    color: DodgerBlue;
-    text-align: center;
-}
-.map-section iframe {
-    width: 100%;
-    height: 320px;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    margin-top: 16px;
+  color: var(--primary);
+  text-align: center;
 }
 
+.map-section iframe {
+  width: 100%;
+  height: 320px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  margin-top: 16px;
+}
 
 .form-section h2 {
-    color: DodgerBlue;
-    text-align: center;
-    margin-top: 30px;
+  color: var(--primary);
+  text-align: center;
+  margin-top: 30px;
 }
 
 .contact-form {
-    background: white;
-    padding: 25px;
-    border-radius: 14px;
-    margin-top: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: 14px;
+  margin-top: 20px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--bg-body);
 }
 
 .row {
-    display: flex;
-    gap: 22px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
 }
-
 
 .field {
-    flex: 1;
-    min-width: 250px;  
+  flex: 1;
+  min-width: 250px;
 }
-
 
 label {
-    font-weight: 600;
-    margin-bottom: 6px;
-    display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: var(--dark);
 }
 
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    margin-bottom: 14px;
-    font-size: 1rem;
-    box-sizing: border-box; 
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 14px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: inherit;
 }
 
 textarea {
-    height: 130px;
+  height: 130px;
 }
 
-
 .submit-btn {
-    background: SeaGreen;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    width: 100%;     
-    max-width: 220px; 
-    display: block;
-    margin: 20px auto 0 auto;
+  background: var(--primary);
+
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 220px;
+  display: block;
+  margin: 20px auto 0 auto;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s;
 }
 
 .submit-btn:hover {
-    background: MediumSeaGreen;
+  background: var(--primary-dark);
 }
-
-
 
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.45);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
 }
+
 .popup-content {
-    background: white;
-    padding: 30px;
-    border-radius: 14px;
-    text-align: center;
-    width: 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  width: 300px;
+  box-shadow: var(--shadow-lg);
 }
+
 .popup-content h2 {
-    color: SeaGreen;
+  color: var(--secondary);
 }
+
 .popup-content button {
-    padding: 10px 20px;
-    background: DodgerBlue;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+  padding: 10px 24px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 
 @media (max-width: 900px) {
-
-
-  .navbar-inner {
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .brand {
-    flex: 0 1 auto;
-  }
-
-
-  .gstin-bar {
-    order: 2;
-    margin-left: auto;
-  }
-
-
-  .mobile-nav-toggle {
-    display: block;
-    order: 3;
-    margin-left: 10px;
-  }
-
-
-  .main-nav {
-    display: none;
-    width: 100%;
-    background: white;
-    padding: 10px 0;
-    border-radius: 0 0 14px 14px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-    flex-direction: column;
-    order: 4;
-  }
-
-  .main-nav.open {
-    display: block;  
-  }
-
-  .menu {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 0;
-  }
-
-  .menu a {
-    width: 100%;
-    padding: 10px 16px;
-  }
-
-
-  .dropdown {
-    display: none;
-    position: static;
-    box-shadow: none;
-    padding-left: 20px;
-    border-left: 3px solid DodgerBlue;
-    border-radius: 0;
-  }
-
-  .has-dropdown.open .dropdown {
-    display: block;
-  }
-
-
-  .container {
-    padding: 16px;
-  }
-
   .contact-details {
     flex-direction: column;
     align-items: stretch;
@@ -386,9 +177,8 @@ textarea {
 
   .detail-box {
     width: 100%;
-    height: auto;        
+    height: auto;
   }
-
 
   .row {
     flex-direction: column;

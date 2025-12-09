@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panel Accessories - Zenjade Automation</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../product-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container navbar-inner">
+
+            <a class="brand" href="/index.html">
+                <img src="/images/logo.png" alt="Zenjade Logo" class="navbar-logo" />
+            </a>
+
+            <nav id="main-nav" class="main-nav">
+                <ul class="menu">
+                    <li><a href="/index.html"><i class="fa fa-home"></i> Home</a></li>
+
+                    <li class="has-dropdown">
+                        <a href="#"><i class="fa fa-cubes"></i> Products <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="/Product/plc.html"><i class="fa fa-microchip"></i> PLC & Controllers</a></li>
+                            <li><a href="/Product/hmi.html"><i class="fa fa-desktop"></i> HMI & SCADA</a></li>
+                            <li><a href="/Product/drives.html"><i class="fa fa-cogs"></i> Drives & Motion</a></li>
+                            <li><a href="/Product/power.html"><i class="fa fa-bolt"></i> Power & Distribution</a></li>
+                            <li><a href="/Product/sensors.html"><i class="fa fa-rss"></i> Sensors & Field</a></li>
+                            <li><a href="/Product/switchgear.html"><i class="fa fa-toggle-on"></i> Switchgear &
+                                    Control</a></li>
+                            <li><a href="/Product/safety.html"><i class="fa fa-shield-alt"></i> Safety Automation</a>
+                            </li>
+                            <li><a href="/Product/networking.html"><i class="fa fa-network-wired"></i> Industrial
+                                    Networking</a></li>
+                            <li><a href="/Product/panel.html"><i class="fa fa-tools"></i> Panel Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-dropdown">
+                        <a href="#"><i class="fa fa-briefcase"></i> Services <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="/Service/system-designing.html"><i class="fa fa-cogs"></i> System Designing</a>
+                            </li>
+                            <li><a href="/Service/plc-controllers.html"><i class="fa fa-microchip"></i> PLC
+                                    Controllers</a></li>
+                            <li><a href="/Service/controllers-installation.html"><i class="fa fa-tools"></i> Controllers
+                                    Installation</a></li>
+                            <li><a href="/Service/panel-wiring.html"><i class="fa fa-plug"></i> Panel Wiring</a></li>
+                            <li><a href="/Service/erection-commissioning.html"><i class="fa fa-hard-hat"></i> Erection &
+                                    Commissioning</a></li>
+                            <li><a href="/Service/testing.html"><i class="fa fa-check-circle"></i> Testing</a></li>
+                            <li><a href="/Service/industrial-automation-controllers.html"><i class="fa fa-industry"></i>
+                                    Industrial Controllers</a></li>
+                            <li><a href="/Service/process-automation.html"><i class="fa fa-exchange-alt"></i> Process
+                                    Automation</a></li>
+                            <li><a href="/Service/drive-troubleshooting.html"><i class="fa fa-wrench"></i> Drive
+                                    Troubleshooting</a></li>
+                            <li><a href="/Service/iot-iiot-solutions.html"><i class="fa fa-wifi"></i> IOT & IIOT 4.0</a>
+                            </li>
+                            <li><a href="/Service/plc-scada-interfacing.html"><i class="fa fa-desktop"></i> PLC SCADA
+                                    Interfacing</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="/career/career.html"><i class="fa fa-user-tie"></i> Careers</a></li>
+                    <li><a href="/contact/contact.html"><i class="fa fa-envelope"></i> Contact Us</a></li>
+                    <li><a href="#" id="navCartBtn"><i class="fa fa-shopping-cart"></i> Enquiry <span
+                                id="navbarCartBadge"
+                                style="display: none; background:#e74c3c; color:white; border-radius:50%; padding:2px 6px; font-size:0.8em; margin-left:5px;">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="gstin-bar">GSTIN: 33AACCZ3045M1Z6</div>
+
+            <button class="mobile-nav-toggle" aria-label="Open Menu" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </button>
+
+        </div>
+    </header>
+
+
+    <div class="container filter-section"
+        style="margin: 28px auto 10px auto; max-width: 1400px; padding: 0 18px; display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-end;">
+        <input type="text" id="searchInput" placeholder="Search products..."
+            style="padding: 10px; border: 1px solid #ddd; border-radius: 6px; flex: 1; max-width: 400px; min-width: 200px;">
+        <select id="categoryFilter"
+            style="padding: 10px; border: 1px solid #ddd; border-radius: 6px; min-width: 150px;">
+            <option value="all">All Categories</option>
+            <option value="plc">PLC & Controllers</option>
+            <option value="hmi">HMI & SCADA</option>
+            <option value="drives">Drives & Motion</option>
+            <option value="power">Power & Distribution</option>
+            <option value="sensors">Sensors & Field</option>
+            <option value="switchgear">Switchgear & Control</option>
+            <option value="safety">Safety Automation</option>
+            <option value="networking">Industrial Networking</option>
+            <option value="panel">Panel Accessories</option>
+        </select>
+    </div>
+
+
+    <div id="componentsContainer">
+
+        <div class="component-card" data-id="46" data-name="Control Cables and Wires" data-type="panel"
+            data-img="../images/Product%20Images/Control%20Cables%20Single-core,%20Multi-core.jpg"
+            data-desc="Overview: Flexible cabling for control circuits. Technical: PVC/PVC, screened/unscreened, numbered cores, oil resistant. Use Cases: Internal panel wiring, connection to field sensors. Benefits: Reliable signal transmission, easy stripping/termination.">
+            <img src="../images/Product%20Images/Control%20Cables%20Single-core,%20Multi-core.jpg" class="thumb-img"
+                alt="Cables & Wires">
+            <h3>Control Cables & Wires</h3>
+            <p class="short-desc">Flexible control cabling.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+        <div class="component-card" data-id="47" data-name="Cable Ducts and Trunking" data-type="panel"
+            data-img="../images/Product%20Images/Cable%20Ducts%20and%20Trays.jpg"
+            data-desc="Overview: Cable management systems for organizes wiring inside control panels. Technical: Slotted PVC trunking, snap-on covers, various widths/heights, self-extinguishing. Use Cases: Panel building, routing wires to devices. Benefits: Neat appearance, wire protection, easy tracing.">
+            <img src="../images/Product%20Images/Cable%20Ducts%20and%20Trays.jpg" class="thumb-img" alt="Cable Ducts">
+            <h3>Cable Ducts & Trunking</h3>
+            <p class="short-desc">Panel cable management.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+        <div class="component-card" data-id="48" data-name="Ferrules, Lugs, and Terminal Blocks" data-type="panel"
+            data-img="../images/Product%20Images/Ferrules%20and%20Markers.jpg"
+            data-desc="Overview: Termination accessories for secure electrical connections. Technical: Insulated bootlace ferrules, ring/fork lugs, DIN rail terminal blocks (screw/spring). Use Cases: Wiring PLCs, MCBs, marshalling signals. Benefits: Gas-tight connections, prevents fraying, professional finish.">
+            <img src="../images/Product%20Images/Ferrules%20and%20Markers.jpg" class="thumb-img" alt="Terminals">
+            <h3>Ferrules, Lugs, & Terminals</h3>
+            <p class="short-desc">Wiring & termination accessories.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+        <div class="component-card" data-id="49" data-name="Cable Glands" data-type="panel"
+            data-img="../images/Product%20Images/Cable%20Glands%20and%20Bushings.jpg"
+            data-desc="Overview: Entry devices for passing cables into enclosures while maintaining IP rating. Technical: Nylon or Brass/SS, strain relief, IP66/IP68. Use Cases: Cable entry into panels, junction boxes, motors. Benefits: Dust/water ingress protection, cable retention.">
+            <img src="../images/Product%20Images/Cable%20Glands%20and%20Bushings.jpg" class="thumb-img"
+                alt="Cable Glands">
+            <h3>Cable Glands</h3>
+            <p class="short-desc">IP-rated cable entry.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+        <div class="component-card" data-id="50" data-name="Cooling Fans and Filters" data-type="panel"
+            data-img="../images/Product%20Images/Cooling%20Fans%20and%20Vent%20Filters.jpg"
+            data-desc="Overview: Thermal management for control cabinets. Technical: Axial fans with filter units, 24V/110V/230V, various airflow (CFM) ratings. Use Cases: Cooling drives, PLCs, and power supplies in panels. Benefits: Prevents overheating, extends component life.">
+            <img src="../images/Product%20Images/Cooling%20Fans%20and%20Vent%20Filters.jpg" class="thumb-img"
+                alt="Fans & Filters">
+            <h3>Cooling Fans & Filters</h3>
+            <p class="short-desc">Panel thermal management.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+        <div class="component-card" data-id="51" data-name="Enclosures and Junction Boxes" data-type="panel"
+            data-img="../images/Product%20Images/Enclosures%20and%20Cabinets%20Wall-mounted,%20Floor-standing.jpg"
+            data-desc="Overview: Housings for automation equipment. Technical: Mild steel (powder coated), Stainless Steel, or Polycarbonate; IP54 to IP66 ratings. Use Cases: Main control panels, local isolator boxes, terminal boxes. Benefits: Environment protection, safety, durability.">
+            <img src="../images/Product%20Images/Enclosures%20and%20Cabinets%20Wall-mounted,%20Floor-standing.jpg"
+                class="thumb-img" alt="Enclosures">
+            <h3>Enclosures & Junction Boxes</h3>
+            <p class="short-desc">Industrial cabinets & boxes.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+        <div class="component-card" data-id="52" data-name="Panel Painting and Consumables" data-type="panel"
+            data-img="../images/Product%20Images/Panel%20Painting%20and%20Powder%20Coating.jpg"
+            data-desc="Overview: Maintenance and finishing supplies for panels. Technical: Touch-up spray paint (RAL 7035/7032), cable ties, spiral wrap, labels. Use Cases: Panel finishing, wire organization, identification. Benefits: Professional aesthetic, organized maintenance.">
+            <img src="../images/Product%20Images/Panel%20Painting%20and%20Powder%20Coating.jpg" class="thumb-img"
+                alt="Consumables">
+            <h3>Panel Consumables</h3>
+            <p class="short-desc">Finishing & maintenance supplies.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="detailsModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" id="closeModal">&times;</button>
+            <figure>
+                <img id="modalImage" src="" alt="Product image" />
+                <figcaption id="modalName"></figcaption>
+            </figure>
+            <div class="modal-desc-container">
+                <p id="modalDesc"></p>
+            </div>
+            <button class="add-cart-btn" id="modalAddCart">Add to Enquiry</button>
+        </div>
+    </div>
+
+
+    <div id="cartModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-labelledby="cartTitle" aria-describedby="enquiryItems">
+            <button class="close" id="closeCart" aria-label="Close Enquiry">&times;</button>
+
+            <h2 id="cartTitle" style="margin:4px 0 12px 0; color:#1967d2; font-size:1.5rem; text-align:center;">
+                Enquiry List
+            </h2>
+
+
+            <section class="items" style="margin-top:6px;">
+                <table id="itemsTableModal" style="width:100%; border-collapse:collapse; margin-top:6px;">
+                    <thead>
+                        <tr>
+                            <th style="text-align:left; padding:8px; border-bottom:1px solid #e9f0ff;">Product Name</th>
+                            <th style="width:120px; text-align:left; padding:8px; border-bottom:1px solid #e9f0ff;">
+                                Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="enquiryItems"></tbody>
+                </table>
+            </section>
+
+
+            <div style="margin-top:14px; font-size:1rem; font-weight:600; text-align:right; padding-right:4px;">
+                Total Quantity: <span id="totalQtyDisplay">0</span>
+            </div>
+
+
+            <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:18px;">
+                <button id="previewBtnModal"
+                    style="background:#1769e0; color:#fff; padding:10px 14px; border-radius:8px; border:none; cursor:pointer;">
+                    Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

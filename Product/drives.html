@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drives & Motion - Zenjade Automation</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../product-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container navbar-inner">
+
+            <a class="brand" href="/index.html">
+                <img src="/images/logo.png" alt="Zenjade Logo" class="navbar-logo" />
+            </a>
+
+            <nav id="main-nav" class="main-nav">
+                <ul class="menu">
+                    <li><a href="/index.html"><i class="fa fa-home"></i> Home</a></li>
+
+                    <li class="has-dropdown">
+                        <a href="#"><i class="fa fa-cubes"></i> Products <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="/Product/plc.html"><i class="fa fa-microchip"></i> PLC & Controllers</a></li>
+                            <li><a href="/Product/hmi.html"><i class="fa fa-desktop"></i> HMI & SCADA</a></li>
+                            <li><a href="/Product/drives.html"><i class="fa fa-cogs"></i> Drives & Motion</a></li>
+                            <li><a href="/Product/power.html"><i class="fa fa-bolt"></i> Power & Distribution</a></li>
+                            <li><a href="/Product/sensors.html"><i class="fa fa-rss"></i> Sensors & Field</a></li>
+                            <li><a href="/Product/switchgear.html"><i class="fa fa-toggle-on"></i> Switchgear &
+                                    Control</a></li>
+                            <li><a href="/Product/safety.html"><i class="fa fa-shield-alt"></i> Safety Automation</a>
+                            </li>
+                            <li><a href="/Product/networking.html"><i class="fa fa-network-wired"></i> Industrial
+                                    Networking</a></li>
+                            <li><a href="/Product/panel.html"><i class="fa fa-tools"></i> Panel Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-dropdown">
+                        <a href="#"><i class="fa fa-briefcase"></i> Services <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="/Service/system-designing.html"><i class="fa fa-cogs"></i> System Designing</a>
+                            </li>
+                            <li><a href="/Service/plc-controllers.html"><i class="fa fa-microchip"></i> PLC
+                                    Controllers</a></li>
+                            <li><a href="/Service/controllers-installation.html"><i class="fa fa-tools"></i> Controllers
+                                    Installation</a></li>
+                            <li><a href="/Service/panel-wiring.html"><i class="fa fa-plug"></i> Panel Wiring</a></li>
+                            <li><a href="/Service/erection-commissioning.html"><i class="fa fa-hard-hat"></i> Erection &
+                                    Commissioning</a></li>
+                            <li><a href="/Service/testing.html"><i class="fa fa-check-circle"></i> Testing</a></li>
+                            <li><a href="/Service/industrial-automation-controllers.html"><i class="fa fa-industry"></i>
+                                    Industrial Controllers</a></li>
+                            <li><a href="/Service/process-automation.html"><i class="fa fa-exchange-alt"></i> Process
+                                    Automation</a></li>
+                            <li><a href="/Service/drive-troubleshooting.html"><i class="fa fa-wrench"></i> Drive
+                                    Troubleshooting</a></li>
+                            <li><a href="/Service/iot-iiot-solutions.html"><i class="fa fa-wifi"></i> IOT & IIOT 4.0</a>
+                            </li>
+                            <li><a href="/Service/plc-scada-interfacing.html"><i class="fa fa-desktop"></i> PLC SCADA
+                                    Interfacing</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="/career/career.html"><i class="fa fa-user-tie"></i> Careers</a></li>
+                    <li><a href="/contact/contact.html"><i class="fa fa-envelope"></i> Contact Us</a></li>
+                    <li><a href="#" id="navCartBtn"><i class="fa fa-shopping-cart"></i> Enquiry <span
+                                id="navbarCartBadge"
+                                style="display: none; background:#e74c3c; color:white; border-radius:50%; padding:2px 6px; font-size:0.8em; margin-left:5px;">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="gstin-bar">GSTIN: 33AACCZ3045M1Z6</div>
+
+            <button class="mobile-nav-toggle" aria-label="Open Menu" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <div class="container filter-section"
+        style="margin: 28px auto 10px auto; max-width: 1400px; padding: 0 18px; display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-end;">
+        <input type="text" id="searchInput" placeholder="Search products..."
+            style="padding: 10px; border: 1px solid #ddd; border-radius: 6px; flex: 1; max-width: 400px; min-width: 200px;">
+        <select id="categoryFilter"
+            style="padding: 10px; border: 1px solid #ddd; border-radius: 6px; min-width: 150px;">
+            <option value="all">All Categories</option>
+            <option value="plc">PLC & Controllers</option>
+            <option value="hmi">HMI & SCADA</option>
+            <option value="drives">Drives & Motion</option>
+            <option value="power">Power & Distribution</option>
+            <option value="sensors">Sensors & Field</option>
+            <option value="switchgear">Switchgear & Control</option>
+            <option value="safety">Safety Automation</option>
+            <option value="networking">Industrial Networking</option>
+            <option value="panel">Panel Accessories</option>
+        </select>
+    </div>
+
+    <div id="componentsContainer">
+
+        <div class="component-card" data-id="13" data-name="Variable Frequency Drives (VFD) General" data-type="drives"
+            data-img="../images/Product%20Images/sinamics-variable-frequency-drives.jpg"
+            data-desc="Overview: General purpose AC drives for speed and torque control of induction motors. Technical: Single/three-phase I/O, PID control, overload capacity, built-in filters. Use Cases: Pumps, fans, simple conveyors. Benefits: Energy savings, process optimization, soft starts/stops reducing mechanical wear.">
+            <img src="../images/Product%20Images/sinamics-variable-frequency-drives.jpg" class="thumb-img"
+                alt="VFD General">
+            <h3>Variable Frequency Drives (VFD)</h3>
+            <p class="short-desc">Efficient motor speed control.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+        <div class="component-card" data-id="14" data-name="VFD SINAMICS G120" data-type="drives"
+            data-img="../images/Product%20Images/VFD%20SINAMICS%20G120.jpg"
+            data-desc="Overview: Modular frequency converter for sophisticated drive tasks. Technical: Safety integrated (STO, SS1), regenerative feedback options, vector control, PROFINET/PROFIBUS. Use Cases: Extruders, mixers, positioning applications. Benefits: Modular power/control units, energy recovery, integrated safety.">
+            <img src="../images/Product%20Images/VFD%20SINAMICS%20G120.jpg" class="thumb-img" alt="VFD SINAMICS G120">
+            <h3>VFD SINAMICS G120</h3>
+            <p class="short-desc">Modular drive for complex tasks.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+        <div class="component-card" data-id="15" data-name="VFD SINAMICS G120C" data-type="drives"
+            data-img="../images/Product%20Images/VFD%20SINAMICS%20G120C.jpg"
+            data-desc="Overview: Compact, versatile inverter for general machinery. Technical: High power density, integrated safety STO, fieldbus interfaces (PROFINET/EtherNet/IP). Use Cases: Material handling, packaging, printing. Benefits: Space-saving, easy commissioning, robust performance.">
+            <img src="../images/Product%20Images/VFD%20SINAMICS%20G120C.jpg" class="thumb-img" alt="VFD SINAMICS G120C">
+            <h3>VFD SINAMICS G120C</h3>
+            <p class="short-desc">Compact, versatile frequency inverter.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+        <div class="component-card" data-id="16" data-name="VFD SINAMICS V20" data-type="drives"
+            data-img="../images/Product%20Images/VFD%20SINAMICS%20V20.jpg"
+            data-desc="Overview: Basic performance inverter for simple motion sequences. Technical: Push-through montage, USS/Modbus RTU, eco mode for energy saving. Use Cases: Basic pumps, fans, compressors, conveyors. Benefits: Economical, quick setup, robust.">
+            <img src="../images/Product%20Images/VFD%20SINAMICS%20V20.jpg" class="thumb-img" alt="VFD SINAMICS V20">
+            <h3>VFD SINAMICS V20</h3>
+            <p class="short-desc">Basic perf. inverter for simple tasks.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+        <div class="component-card" data-id="17" data-name="Servo Drives and Motors" data-type="drives"
+            data-img="../images/Product%20Images/Servo%20Drives%20and%20Motors.jpg"
+            data-desc="Overview: High-dynamic servo systems for precise position, speed, and torque control. Technical: Low inertia motors, absolute encoders, real-time Ethernet (PROFINET IRT/EtherCAT). Use Cases: Robotics, CNC, high-speed packaging, pick and place. Benefits: Maximum precision, high dynamic response, interpolated motion.">
+            <img src="../images/Product%20Images/Servo%20Drives%20and%20Motors.jpg" class="thumb-img"
+                alt="Servo Drives">
+            <h3>Servo Drives & Motors</h3>
+            <p class="short-desc">Precise motion & position control.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+        <div class="component-card" data-id="18" data-name="Soft Starters" data-type="drives"
+            data-img="../images/Product%20Images/Soft%20Starters.jpg"
+            data-desc="Overview: Devices for smooth startup and stopping of AC motors to limit inrush current. Technical: Voltage ramp control, integrated bypass, motor protection. Use Cases: Large pumps, fans, crushers, mills. Benefits: Reduces mechanical stress, limits grid voltage dips, extends motor life.">
+            <img src="../images/Product%20Images/Soft%20Starters.jpg" class="thumb-img" alt="Soft Starters">
+            <h3>Soft Starters</h3>
+            <p class="short-desc">Smooth motor start/stop control.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+        <div class="component-card" data-id="19" data-name="Stepper Motors and Drives" data-type="drives"
+            data-img="../images/Product%20Images/Stepper%20Motors%20and%20Controllers%201.jpg"
+            data-desc="Overview: Cost-effective position control for lower-speed, high-torque applications. Technical: Open/closed loop options, microstepping, NEMA frame sizes. Use Cases: 3D printers, labeling machines, small automation. Benefits: Simple open-loop position control, high holding torque.">
+            <img src="../images/Product%20Images/Stepper%20Motors%20and%20Controllers%201.jpg" class="thumb-img"
+                alt="Stepper Motors">
+            <h3>Stepper Motors & Drives</h3>
+            <p class="short-desc">Simple, high-torque positioning.</p>
+            <div class="card-actions">
+                <button class="view-details-btn">View Details</button>
+                <button class="add-cart-btn">Add to Enquiry</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="detailsModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" id="closeModal">&times;</button>
+            <figure>
+                <img id="modalImage" src="" alt="Product image" />
+                <figcaption id="modalName"></figcaption>
+            </figure>
+            <div class="modal-desc-container">
+                <p id="modalDesc"></p>
+            </div>
+            <button class="add-cart-btn" id="modalAddCart">Add to Enquiry</button>
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-labelledby="cartTitle" aria-describedby="enquiryItems">
+            <button class="close" id="closeCart" aria-label="Close Enquiry">&times;</button>
+
+            <h2 id="cartTitle" style="margin:4px 0 12px 0; color:#1967d2; font-size:1.5rem; text-align:center;">
+                Enquiry List
+            </h2>
+
+
+            <section class="items" style="margin-top:6px;">
+                <table id="itemsTableModal" style="width:100%; border-collapse:collapse; margin-top:6px;">
+                    <thead>
+                        <tr>
+                            <th style="text-align:left; padding:8px; border-bottom:1px solid #e9f0ff;">Product Name</th>
+                            <th style="width:120px; text-align:left; padding:8px; border-bottom:1px solid #e9f0ff;">
+                                Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="enquiryItems"></tbody>
+                </table>
+            </section>
+
+
+            <div style="margin-top:14px; font-size:1rem; font-weight:600; text-align:right; padding-right:4px;">
+                Total Quantity: <span id="totalQtyDisplay">0</span>
+            </div>
+
+
+            <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:18px;">
+                <button id="previewBtnModal"
+                    style="background:#1769e0; color:#fff; padding:10px 14px; border-radius:8px; border:none; cursor:pointer;">
+                    Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
